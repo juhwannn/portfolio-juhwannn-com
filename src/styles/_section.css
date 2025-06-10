@@ -1,0 +1,5 @@
+:root {
+  --section-title-color: var(--color-text-primary);
+  --section-description-color: var(--color-text-muted);
+  --section-underline-color: var(--color-accent);
+}

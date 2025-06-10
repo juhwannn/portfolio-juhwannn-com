@@ -1,0 +1,23 @@
+:root {
+  --contact-section-bg: var(--color-bg-alt);
+
+  --contact-icon-bg: var(--color-accent);
+  --contact-icon-color: #ffffff;
+
+  --contact-text-color: var(--color-text-secondary);
+  --contact-link-color: var(--color-accent);
+
+  --form-bg: var(--color-bg);
+  --form-radius: 8px;
+  --form-shadow: var(--shadow-md);
+
+  --form-title-color: var(--color-text-primary);
+  --form-label-color: var(--color-text-secondary);
+  --form-text-color: var(--color-text-primary);
+  --form-border: var(--color-border);
+  --form-border-focus: var(--color-accent);
+
+  --form-button-bg: var(--color-accent);
+  --form-button-text: #ffffff;
+  --form-button-hover-bg: var(--color-accent-hover);
+}

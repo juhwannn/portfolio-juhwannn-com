@@ -1,0 +1,123 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--hero-bg-gradient-start) 0%,
+    var(--hero-bg-gradient-end) 100%
+  );
+}
+
+.heroContent {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--hero-title-color);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--hero-subtitle-color);
+  margin-bottom: 1.5rem;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--hero-description-color);
+  margin-bottom: 2rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.primaryButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondaryButton:hover {
+  background-color: var(--color-accent);
+  color: var(--button-text);
+}
+
+.heroImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--hero-image-border);
+  box-shadow: 0 10px 25px var(--hero-image-shadow);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  background-color: var(--hero-image-bg);
+  background-image: url('/profile.png?height=200&width=200');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+  }
+
+  .heroContent {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .heroActions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

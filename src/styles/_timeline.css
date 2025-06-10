@@ -1,0 +1,24 @@
+:root {
+  --experience-section-bg: var(--color-bg-alt);
+
+  --timeline-line-color: #ddd;
+  --timeline-dot-color: var(--color-accent);
+  --timeline-dot-border: var(--color-bg);
+
+  --timeline-card-bg: var(--color-bg);
+  --timeline-card-radius: 8px;
+  --timeline-card-shadow: var(--shadow-md);
+  --timeline-card-hover-shadow: var(--shadow-lg);
+
+  --timeline-title-color: var(--color-text-primary);
+  --timeline-subtitle-color: var(--color-text-secondary);
+  --timeline-period-color: var(--color-text-muted);
+  --timeline-position-color: var(--color-accent);
+  --timeline-list-color: var(--color-text-secondary);
+  --timeline-checkmark-color: var(--color-accent);
+}
+
+.dark {
+  --timeline-line-color: #444;
+  --timeline-dot-border: #1a1a1a;
+}

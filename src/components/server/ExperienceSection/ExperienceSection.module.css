@@ -1,0 +1,172 @@
+.experienceSection {
+  padding: 4rem 1rem;
+  background-color: var(--experience-section-bg);
+}
+
+.projectTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: var(--tag-radius);
+  font-size: var(--tag-font-size);
+  font-weight: var(--tag-font-weight);
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: var(--timeline-line-color);
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--timeline-dot-color);
+  border: 2px solid var(--timeline-dot-border);
+}
+
+.timelineContent {
+  background-color: var(--timeline-card-bg);
+  border-radius: var(--timeline-card-radius);
+  padding: 1.5rem;
+  box-shadow: var(--timeline-card-shadow);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.timelineContent:hover {
+  box-shadow: var(--timeline-card-hover-shadow);
+}
+
+.timelineHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.timelineTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--timeline-title-color);
+  margin-bottom: 0.25rem;
+}
+
+.timelineSubtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--timeline-subtitle-color);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timelinePeriod {
+  font-size: 0.875rem;
+  color: var(--timeline-period-color);
+}
+
+.timelinePosition {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--timeline-position-color);
+  margin-bottom: 1rem;
+}
+
+.timelineList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timelineList li {
+  padding: 0.5rem 0;
+  color: var(--timeline-list-color);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timelineList li::before {
+  content: '✓';
+  color: var(--timeline-checkmark-color);
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .timelineHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experienceSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .timeline::before {
+    left: 50%;
+  }
+
+  .timelineItem {
+    width: 80%;
+    margin-left: 50%;
+    padding-left: 3rem;
+  }
+
+  .timelineItem:nth-child(even) {
+    margin-left: -30%;
+    padding-left: 0;
+    padding-right: 3rem;
+    text-align: right;
+  }
+
+  .timelineItem:nth-child(even)::before {
+    left: auto;
+    right: -8px;
+  }
+
+  .timelineItem:nth-child(even) .projectTech {
+    justify-content: flex-end;
+  }
+
+  .timelineItem:nth-child(even) .timelineList li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+  }
+
+  .timelineItem:nth-child(even) .timelineList li::before {
+    left: auto;
+    right: 0;
+  }
+}

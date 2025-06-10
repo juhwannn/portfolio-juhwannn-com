@@ -1,0 +1,32 @@
+:root {
+  --projects-section-bg: var(--color-bg);
+
+  --project-card-bg: var(--color-bg);
+  --project-card-radius: 8px;
+  --project-card-shadow: var(--shadow-md);
+  --project-card-hover-shadow: var(--shadow-lg);
+
+  --project-image-bg: var(--color-bg-alt);
+
+  --project-title-color: var(--color-text-primary);
+  --project-description-color: var(--color-text-muted);
+
+  --project-link-color: var(--color-accent);
+
+  --filter-button-border: var(--color-border);
+  --filter-button-text: var(--color-text-secondary);
+  --filter-button-hover-bg: var(--color-bg-alt);
+
+  --filter-button-active-bg: var(--color-accent);
+  --filter-button-active-text: #ffffff;
+  --filter-button-active-border: var(--color-accent);
+}
+
+.dark {
+  --project-card-shadow: rgba(0, 0, 0, 0.15);
+  --project-card-hover-shadow: rgba(0, 0, 0, 0.3);
+
+  --project-image-bg: #333;
+
+  --filter-button-hover-bg: #2a2a2a;
+}

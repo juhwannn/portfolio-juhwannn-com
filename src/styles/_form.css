@@ -1,0 +1,10 @@
+:root {
+  --form-bg: var(--color-surface);
+  --form-radius: 8px;
+  --form-shadow: var(--shadow-md);
+
+  --form-label-color: var(--color-text-secondary);
+  --form-text-color: var(--color-text-primary);
+  --form-border: var(--color-border);
+  --form-border-focus: var(--color-accent);
+}

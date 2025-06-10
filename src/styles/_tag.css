@@ -1,0 +1,11 @@
+:root {
+  --tag-bg: #f0f7ff;
+  --tag-text: var(--color-accent);
+  --tag-radius: 30px;
+  --tag-font-size: 0.75rem;
+  --tag-font-weight: 500;
+}
+
+.dark {
+  --tag-bg: #263240;
+}

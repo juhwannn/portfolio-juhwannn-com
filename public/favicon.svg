@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- 흰 배경, 둥근 모서리 -->
+  <rect width="64" height="64" fill="#ffffff" rx="12" />
+  <!-- A 모노그램: 외곽 + 횡단바 -->
+  <path
+    d="
+      M16 54 
+      L32 10 
+      L48 54 
+      L40 54 
+      L32 28 
+      L24 54 
+      Z
+      M24 42 
+      H40 
+      V46 
+      H24 
+      Z
+    "
+    fill="#0070f3"
+  />
+</svg>

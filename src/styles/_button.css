@@ -1,0 +1,7 @@
+:root {
+  --button-bg: var(--color-accent);
+  --button-hover-bg: var(--color-accent-hover);
+  --button-text: #ffffff;
+  --button-border-radius: 4px;
+  --button-font-weight: 500;
+}

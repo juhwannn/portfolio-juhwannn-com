@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-juhwannn-com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhwannn/portfolio-juhwannn-com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juhwannn/portfolio-juhwannn-com/issues"
+  },
+  "homepage": "https://github.com/juhwannn/portfolio-juhwannn-com#readme",
+  "dependencies": {
+    "@juhwannn/ui": "^1.0.19",
+    "@vercel/analytics": "^1.5.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "^15.3.3",
+    "prettier": "^3.5.3"
+  }
+}

@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+turbo/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

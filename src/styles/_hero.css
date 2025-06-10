@@ -1,0 +1,37 @@
+:root {
+  --hero-bg-gradient-start: #f5f7fa;
+  --hero-bg-gradient-end: #c3cfe2;
+
+  --hero-title-color: var(--color-text-primary);
+  --hero-subtitle-color: var(--color-text-secondary);
+  --hero-description-color: var(--color-text-muted);
+
+  --hero-image-border: #ffffff;
+  --hero-image-shadow: rgba(0, 0, 0, 0.1);
+  --hero-image-bg: #ddd;
+
+  transition:
+    background-color 4s ease,
+    color 4s ease,
+    border-color 4s ease,
+    box-shadow 4s ease;
+}
+
+.dark {
+  --hero-bg-gradient-start: #1f1f1f;
+  --hero-bg-gradient-end: #2b2b2b;
+
+  --hero-title-color: var(--color-text-primary);
+  --hero-subtitle-color: var(--color-text-secondary);
+  --hero-description-color: var(--color-text-muted);
+
+  --hero-image-border: #1e1e1e;
+  --hero-image-shadow: rgba(0, 0, 0, 0.3);
+  --hero-image-bg: #444;
+
+  transition:
+    background-color 4s ease,
+    color 4s ease,
+    border-color 4s ease,
+    box-shadow 4s ease;
+}

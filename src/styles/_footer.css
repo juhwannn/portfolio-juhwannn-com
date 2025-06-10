@@ -1,0 +1,17 @@
+:root {
+  --footer-bg: #333;
+  --footer-text: #ffffff;
+  --footer-muted: var(--color-text-muted);
+
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --footer-icon-hover-bg: rgba(255, 255, 255, 0.2);
+  --footer-icon-color: #ffffff;
+}
+
+.dark {
+  --footer-bg: #111;
+  --footer-muted: #777;
+
+  --footer-icon-bg: rgba(255, 255, 255, 0.05);
+  --footer-icon-hover-bg: rgba(255, 255, 255, 0.15);
+}

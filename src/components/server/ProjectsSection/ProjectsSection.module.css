@@ -1,0 +1,131 @@
+.projectsSection {
+  padding: 4rem 1rem;
+  background-color: var(--projects-section-bg);
+}
+
+.projectFilter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projectTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: var(--tag-radius);
+  font-size: var(--tag-font-size);
+  font-weight: var(--tag-font-weight);
+  pointer-events: none;
+  user-select: none;
+}
+
+.filterButton {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--filter-button-border);
+  border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--filter-button-text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: var(--filter-button-hover-bg);
+}
+
+.filterButton.active {
+  background-color: var(--filter-button-active-bg);
+  color: var(--filter-button-active-text);
+  border-color: var(--filter-button-active-border);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projectCard {
+  background-color: var(--project-card-bg);
+  border-radius: var(--project-card-radius);
+  overflow: hidden;
+  box-shadow: var(--project-card-shadow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--project-card-hover-shadow);
+}
+
+.projectImage {
+  height: 200px;
+  background-color: var(--project-image-bg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--project-title-color);
+  margin-bottom: 0.75rem;
+}
+
+.projectDescription {
+  font-size: 0.875rem;
+  color: var(--project-description-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLink {
+  font-size: 0.875rem;
+  color: var(--project-link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

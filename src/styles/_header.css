@@ -1,0 +1,14 @@
+:root {
+  --header-bg: rgba(255, 255, 255, 0.5);
+  --header-shadow: var(--shadow-sm);
+
+  --logo-color: var(--color-text-primary);
+
+  --nav-link-color: var(--color-text-secondary);
+  --nav-link-hover-color: var(--color-accent);
+}
+
+.dark {
+  --header-bg: rgba(20, 20, 20, 0.85);
+  --header-shadow: rgba(0, 0, 0, 0.5);
+}

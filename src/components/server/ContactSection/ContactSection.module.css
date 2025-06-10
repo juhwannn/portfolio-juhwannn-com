@@ -1,0 +1,56 @@
+.contactSection {
+  padding: 4rem 1rem;
+  background-color: var(--contact-section-bg);
+}
+
+.contactInfo {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contactIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--contact-icon-bg);
+  color: var(--contact-icon-color);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.contactIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contactText {
+  font-size: 1rem;
+  color: var(--contact-text-color);
+}
+
+.contactLink {
+  font-size: 1rem;
+  color: var(--contact-link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .headerContent,
+  .contactSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

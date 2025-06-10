@@ -1,0 +1,76 @@
+.skillsSection {
+  padding: 4rem 1rem;
+  background-color: var(--skills-section-bg);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skillCard {
+  background-color: var(--skill-card-bg);
+  border-radius: var(--skill-card-radius);
+  padding: 2rem;
+  box-shadow: var(--skill-card-shadow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--skill-card-hover-shadow);
+}
+
+.skillCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--skill-title-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--skill-title-border);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+}
+
+.techCard {
+  text-align: center;
+  background: var(--section-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 14px 8px;
+}
+
+.techIcon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.techLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skillsSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
