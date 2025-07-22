@@ -1,4 +1,3 @@
-import { PiProjectorScreenChartFill } from 'react-icons/pi';
 import SectionBasic from '@/components/client/sections/SectionBasic';
 import styles from '@/components/server/ExperienceSection/ExperienceSection.module.css';
 import Hr from '@/components/client/Hr';
@@ -21,7 +20,6 @@ export default function ExperienceSection() {
             <p className={styles.timelinePosition}>주니어 개발자</p>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               회사 공식 서비스 웹사이트 및 어드민 개발
             </p>
 
@@ -55,7 +53,6 @@ export default function ExperienceSection() {
             <Hr />
 
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               배송 서비스 고도화 및 백엔드 개선
             </p>
 
@@ -98,7 +95,6 @@ export default function ExperienceSection() {
             <p className={styles.timelinePosition}>풀스택 개발자</p>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               신규 프로젝트 설계 및 개발 리딩
             </p>
             <div className={styles.projectTech}>
@@ -126,7 +122,6 @@ export default function ExperienceSection() {
             <p className={styles.timelinePosition}>솔루션개발팀/선임연구원</p>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               기존 솔루션 유지보수 및 기능 고도화
             </p>
             <div className={styles.projectTech}>
@@ -145,7 +140,6 @@ export default function ExperienceSection() {
             </ul>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               외주 프로젝트 개발 (Node.js + React 기반)
             </p>
             <ul className={styles.timelineList}>
@@ -168,7 +162,6 @@ export default function ExperienceSection() {
             </ul>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               외주 프로젝트 고도화 (CI/CD + 테스트 환경 구축)
             </p>
             <div className={styles.projectTech}>
@@ -188,7 +181,6 @@ export default function ExperienceSection() {
             </ul>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               기존 솔루션 리뉴얼 프로젝트
             </p>
             <div className={styles.projectTech}>
@@ -204,7 +196,6 @@ export default function ExperienceSection() {
             </ul>
             <Hr />
             <p className={styles.timelineSubtitle}>
-              <PiProjectorScreenChartFill />
               병원 데이터 기반 신규 솔루션 개발
             </p>
             <div className={styles.projectTech}>
