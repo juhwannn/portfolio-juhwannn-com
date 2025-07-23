@@ -167,17 +167,10 @@ export default function ProjectsSection() {
                 GitHub
               </a>
               <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
+                href="https://blog.juhwannn.com"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.projectLink}
-                style={{
-                  pointerEvents: 'none',
-                  color: 'gray',
-                  textDecoration: 'none',
-                  cursor: 'not-allowed',
-                }}
               >
                 Visit Site
               </a>
