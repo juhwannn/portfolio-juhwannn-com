@@ -60,7 +60,7 @@
 }
 
 .projectCard {
-  background-color: var(--project-card-bg);
+  background-color: var(--project-card-background);
   border-radius: var(--project-card-radius);
   overflow: hidden;
   box-shadow: var(--project-card-shadow);

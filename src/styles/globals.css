@@ -21,14 +21,14 @@
 
 html,
 body {
-  width: 100%; /* ✅ max-width 대신 width */
-  min-height: 100%; /* ✅ 전체 높이 확보 */
+  width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: var(--color-background);
   color: var(--color-text-primary);
   font-family: system-ui, sans-serif;
-  position: relative; /* ✅ 필요 시 z-index 기준용 (선택적) */
+  position: relative;
 }
 a {
   color: inherit;
@@ -44,7 +44,7 @@ a {
 }
 
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--card-background);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
 }

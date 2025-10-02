@@ -1,5 +1,5 @@
 :root {
-  --card-bg: var(--color-surface);
+  --card-background: var(--color-surface);
   --card-radius: 8px;
   --card-shadow: var(--shadow-md);
   --card-hover-shadow: var(--shadow-lg);

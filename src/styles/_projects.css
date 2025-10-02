@@ -1,12 +1,12 @@
 :root {
-  --projects-section-bg: var(--color-bg);
+  --projects-section-bg: var(--color-background);
 
-  --project-card-bg: var(--color-bg);
+  --project-card-background: var(--color-background);
   --project-card-radius: 8px;
   --project-card-shadow: var(--shadow-md);
   --project-card-hover-shadow: var(--shadow-lg);
 
-  --project-image-bg: var(--color-bg-alt);
+  --project-image-bg: var(--color-background-alt);
 
   --project-title-color: var(--color-text-primary);
   --project-description-color: var(--color-text-muted);
@@ -15,7 +15,7 @@
 
   --filter-button-border: var(--color-border);
   --filter-button-text: var(--color-text-secondary);
-  --filter-button-hover-bg: var(--color-bg-alt);
+  --filter-button-hover-bg: var(--color-background-alt);
 
   --filter-button-active-bg: var(--color-accent);
   --filter-button-active-text: #ffffff;

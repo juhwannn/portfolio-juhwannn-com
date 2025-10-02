@@ -2,7 +2,8 @@
 
 import styles from '@/components/server/ProjectsSection/ProjectsSection.module.css';
 import SectionBasic from '@/components/client/sections/SectionBasic';
-import { BaseModal } from '@juhwannn/ui';
+// import { BaseModal } from '@juhwannn/ui';
+import BaseModal from '@/components/client/modals/BaseModal';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -294,16 +295,44 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
+      <BaseModal
+        isOpen={chickenBotModal}
+        onClose={() => setChickenBotModal(false)}
+        project={{
+          project: 'chicken-bot',
+          screenshots: [
+            '/modal/chickenBot/1.png',
+            '/modal/chickenBot/2.png',
+            '/modal/chickenBot/3.png',
+          ],
+          liveUrl: 'https://blog.juhwannn.com',
+          repoUrl: '',
+          githubUrl: '',
+          technologies: ['Next.js', 'Express.js', 'MongoDB'],
+          description: 'Github 스타일로 리뉴얼 중 ...',
+          features: ['반응형 웹 디자인'],
+          title: '블로그',
+        }}
+      />
 
       <BaseModal
         isOpen={blogModal}
         onClose={() => setBlogModal(false)}
+        project={{
+          project: 'test',
+          screenshots: ['/projects/blog1.png'],
+          liveUrl: 'https://blog.juhwannn.com',
+          repoUrl: '',
+          githubUrl: '',
+          technologies: ['Next.js', 'Express.js', 'MongoDB'],
+          description: 'Github 스타일로 리뉴얼 중 ...',
+          features: ['반응형 웹 디자인'],
+          title: '블로그',
+        }}
         title="My Modal"
         footer={<button onClick={() => setBlogModal(false)}>Close</button>}
         scope="fullscreen"
-      >
-        <p>Modal content goes here.</p>
-      </BaseModal>
+      />
       <BaseModal
         isOpen={youtubeLabelModal}
         onClose={() => setYoutubeLabelModal(false)}

@@ -1,11 +1,11 @@
 :root {
-  --experience-section-bg: var(--color-bg-alt);
+  --experience-section-bg: var(--color-background-alt);
 
   --timeline-line-color: #ddd;
   --timeline-dot-color: var(--color-accent);
-  --timeline-dot-border: var(--color-bg);
+  --timeline-dot-border: var(--color-background);
 
-  --timeline-card-bg: var(--color-bg);
+  --timeline-card-background: var(--color-background);
   --timeline-card-radius: 8px;
   --timeline-card-shadow: var(--shadow-md);
   --timeline-card-hover-shadow: var(--shadow-lg);

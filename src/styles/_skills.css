@@ -1,6 +1,6 @@
 :root {
-  --skills-section-bg: var(--color-bg);
-  --skill-card-bg: var(--color-bg-alt);
+  --skills-section-background: var(--color-background);
+  --skill-card-background: var(--color-background-alt);
   --skill-card-radius: 8px;
   --skill-card-shadow: var(--shadow-md);
   --skill-card-hover-shadow: var(--shadow-lg);

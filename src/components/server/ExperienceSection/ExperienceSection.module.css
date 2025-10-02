@@ -54,7 +54,7 @@
 }
 
 .timelineContent {
-  background-color: var(--timeline-card-bg);
+  background-color: var(--timeline-card-background);
   border-radius: var(--timeline-card-radius);
   padding: 1.5rem;
   box-shadow: var(--timeline-card-shadow);

@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #ffffff;
-  --color-bg-alt: #f8f9fa;
+  --color-background: #ffffff;
+  --color-background-alt: #f8f9fa;
 
   --color-text-primary: #333;
   --color-text-secondary: #555;
@@ -20,8 +20,8 @@
 }
 
 .dark {
-  --color-bg: #1a1a1a;
-  --color-bg-alt: #1f1f1f;
+  --color-background: #1a1a1a;
+  --color-background-alt: #1f1f1f;
 
   --color-text-primary: #f0f0f0;
   --color-text-secondary: #cccccc;

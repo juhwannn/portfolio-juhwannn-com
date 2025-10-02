@@ -1,5 +1,5 @@
 :root {
-  --contact-section-bg: var(--color-bg-alt);
+  --contact-section-bg: var(--color-background-alt);
 
   --contact-icon-bg: var(--color-accent);
   --contact-icon-color: #ffffff;
@@ -7,7 +7,7 @@
   --contact-text-color: var(--color-text-secondary);
   --contact-link-color: var(--color-accent);
 
-  --form-bg: var(--color-bg);
+  --form-bg: var(--color-background);
   --form-radius: 8px;
   --form-shadow: var(--shadow-md);
 
