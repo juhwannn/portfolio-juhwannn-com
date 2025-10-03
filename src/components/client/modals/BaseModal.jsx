@@ -1,32 +1,35 @@
 'use client';
 
 import { useState } from 'react';
-// import { Button } from '@/components/ui/button';
-import {
-  X,
-  ExternalLink,
-  Github,
-  ChevronLeft,
-  ChevronRight,
-} from 'lucide-react';
-
-import { BaseButton as Button } from '@juhwannn/ui';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { BaseButton } from '@juhwannn/ui';
 import styles from './BaseModal.module.css';
 
-export default function BaseModal({ project, isOpen, onClose }) {
+export default function BaseModal({
+  isOpen,
+  onClose,
+  title,
+  background,
+  description,
+  footer,
+  githubUrl,
+  liveUrl,
+  screenshots = [],
+  features = [],
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  if (!isOpen || !project) return null;
+  if (!isOpen) return null;
 
   const nextImage = () => {
     setCurrentImageIndex((prev) =>
-      prev === project.screenshots.length - 1 ? 0 : prev + 1
+      prev === screenshots.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
     setCurrentImageIndex((prev) =>
-      prev === 0 ? project.screenshots.length - 1 : prev - 1
+      prev === 0 ? screenshots.length - 1 : prev - 1
     );
   };
 
@@ -39,36 +42,22 @@ export default function BaseModal({ project, isOpen, onClose }) {
   return (
     <div className={styles.modalOverlay} onClick={handleBackdropClick}>
       <div className={styles.modalContent}>
-        {/* Header */}
         <div className={styles.modalHeader}>
           <div>
-            <h2 className={styles.modalTitle}>{project.title}</h2>
-            <p className={styles.modalTagline}>{project.tagline}</p>
+            <h2 className={styles.modalTitle}>{title}</h2>
           </div>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onClose}
-            className={styles.closeButton}
-          >
-            <X className="h-5 w-5" />
-          </Button>
         </div>
 
-        {/* Content */}
         <div className={styles.modalBody}>
-          {/* Screenshots Carousel */}
-          {project.screenshots.length > 0 && (
+          {screenshots.length > 0 && (
             <div className={styles.screenshotSection}>
               <div className={styles.screenshotContainer}>
                 <img
-                  src={
-                    project.screenshots[currentImageIndex] || '/placeholder.svg'
-                  }
-                  alt={`${project.title} screenshot ${currentImageIndex + 1}`}
+                  src={screenshots[currentImageIndex] || '/placeholder.svg'}
+                  alt={`${title} screenshot ${currentImageIndex + 1}`}
                   className={styles.screenshot}
                 />
-                {project.screenshots.length > 1 && (
+                {screenshots.length > 1 && (
                   <>
                     <button
                       onClick={prevImage}
@@ -85,9 +74,9 @@ export default function BaseModal({ project, isOpen, onClose }) {
                   </>
                 )}
               </div>
-              {project.screenshots.length > 1 && (
+              {screenshots.length > 1 && (
                 <div className={styles.carouselDots}>
-                  {project.screenshots.map((_, index) => (
+                  {screenshots.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
@@ -99,31 +88,21 @@ export default function BaseModal({ project, isOpen, onClose }) {
             </div>
           )}
 
-          {/* Project Details */}
           <div className={styles.detailsGrid}>
-            {/* Description */}
             <div className={styles.detailSection}>
-              <h3 className={styles.sectionTitle}>프로젝트 설명</h3>
-              <p className={styles.description}>{project.description}</p>
+              <h3 className={styles.sectionTitle}>배경</h3>
+              <p className={styles.description}>{background}</p>
             </div>
 
-            {/* Technologies */}
             <div className={styles.detailSection}>
-              <h3 className={styles.sectionTitle}>사용 기술</h3>
-              <div className={styles.techList}>
-                {project.technologies.map((tech, index) => (
-                  <span key={index} className={styles.techTag}>
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              <h3 className={styles.sectionTitle}>설명</h3>
+              <p className={styles.description}>{description}</p>
             </div>
 
-            {/* Features */}
             <div className={styles.detailSection}>
               <h3 className={styles.sectionTitle}>주요 기능</h3>
               <ul className={styles.featureList}>
-                {project.features.map((feature, index) => (
+                {features.map((feature, index) => (
                   <li key={index} className={styles.featureItem}>
                     {feature}
                   </li>
@@ -133,28 +112,17 @@ export default function BaseModal({ project, isOpen, onClose }) {
           </div>
         </div>
 
-        {/* Footer */}
         <div className={styles.modalFooter}>
           <div className={styles.buttonGroup}>
-            {project.liveUrl && (
-              <Button
-                onClick={() => window.open(project.liveUrl, '_blank')}
-                className={styles.primaryButton}
-              >
-                <ExternalLink className="h-4 w-4 mr-2" />
-                라이브 데모
-              </Button>
-            )}
-            {project.githubUrl && (
-              <Button
-                variant="outline"
-                onClick={() => window.open(project.githubUrl, '_blank')}
-                className={styles.secondaryButton}
-              >
-                <Github className="h-4 w-4 mr-2" />
-                GitHub
-              </Button>
-            )}
+            <a
+              href={githubUrl ?? '#'}
+              onClick={() => window.open(githubUrl, '_blank')}
+              className={styles.secondaryButton}
+            >
+              GitHub
+            </a>
+
+            <a onClick={() => window.open(liveUrl, '_blank')}>Visit Site</a>
           </div>
         </div>
       </div>
