@@ -2,20 +2,16 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { BaseButton } from '@juhwannn/ui';
 import styles from './BaseModal.module.css';
 
 export default function BaseModal({
   isOpen,
   onClose,
   title,
-  background,
-  description,
-  footer,
   githubUrl,
   liveUrl,
   screenshots = [],
-  features = [],
+  children,
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -87,29 +83,7 @@ export default function BaseModal({
               )}
             </div>
           )}
-
-          <div className={styles.detailsGrid}>
-            <div className={styles.detailSection}>
-              <h3 className={styles.sectionTitle}>배경</h3>
-              <p className={styles.description}>{background}</p>
-            </div>
-
-            <div className={styles.detailSection}>
-              <h3 className={styles.sectionTitle}>설명</h3>
-              <p className={styles.description}>{description}</p>
-            </div>
-
-            <div className={styles.detailSection}>
-              <h3 className={styles.sectionTitle}>주요 기능</h3>
-              <ul className={styles.featureList}>
-                {features.map((feature, index) => (
-                  <li key={index} className={styles.featureItem}>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          {children}
         </div>
 
         <div className={styles.modalFooter}>

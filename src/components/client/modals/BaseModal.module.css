@@ -123,54 +123,6 @@
   opacity: 1;
 }
 
-.detailsGrid {
-  display: grid;
-  gap: 2rem;
-}
-
-.detailSection {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.sectionTitle {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--color-text-secondary);
-  margin: 0;
-}
-
-.description {
-  color: var(--foreground);
-  line-height: 1.6;
-  margin: 0;
-}
-
-.featureList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.featureItem {
-  position: relative;
-  padding-left: 1.25rem;
-  color: var(--foreground);
-  line-height: 1.5;
-}
-
-.featureItem::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  font-weight: bold;
-}
-
 .modalFooter {
   padding: 1.5rem;
   border-top: 1px solid var(--color-border);
@@ -207,10 +159,6 @@
 
   .modalTitle {
     font-size: 1.25rem;
-  }
-
-  .detailsGrid {
-    gap: 1.5rem;
   }
 
   .buttonGroup {
