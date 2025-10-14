@@ -140,7 +140,19 @@ export default function ProjectsSection() {
           </div>
         </div>
         <div className={styles.projectCard} data-category="mobile">
-          <div className={styles.projectImage}></div>
+          <div className={styles.projectImage}>
+            <Image
+              src="/projects/blog.png"
+              alt="블로그"
+              priority
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center',
+              }}
+            />
+          </div>
           <div className={styles.projectContent}>
             <h3 className={styles.projectTitle}>블로그</h3>
             <p className={styles.projectDescription}>
