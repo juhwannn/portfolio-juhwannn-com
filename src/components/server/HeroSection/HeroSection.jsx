@@ -4,6 +4,9 @@ import styles from '@/components/server/HeroSection/HeroSection.module.css';
 export default function HeroSection() {
   return (
     <section id="about" className={styles.heroSection}>
+      <div className={styles.heroImage}>
+        <div className={styles.profileImage}></div>
+      </div>
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>안주환</h1>
         <h2 className={styles.heroSubtitle}>개발자 | 2020 ~ </h2>
@@ -25,9 +28,6 @@ export default function HeroSection() {
             연락하기
           </Link>
         </div>
-      </div>
-      <div className={styles.heroImage}>
-        <div className={styles.profileImage}></div>
       </div>
     </section>
   );
