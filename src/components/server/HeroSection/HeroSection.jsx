@@ -8,8 +8,8 @@ export default function HeroSection() {
         <h1 className={styles.heroTitle}>안주환</h1>
         <h2 className={styles.heroSubtitle}>개발자 | 2020 ~ </h2>
         <p className={styles.heroDescription}>
-          안녕하세요, 저는 기초와 원리를 중시하는 4년차 풀사이클을 지망하는
-          JavaScript 개발자입니다. <br />
+          안녕하세요, 저는 기초와 원리를 중시하는 JavaScript 풀스택 개발자입니다.
+          <br />
           React와 Node.js를 중심으로 한 웹 개발 전반에 능숙하며, 클라이언트부터
           서버, 인프라까지 직접 설계하고 운영할 수 있는 역량을 갖추고 있습니다.
           <br />

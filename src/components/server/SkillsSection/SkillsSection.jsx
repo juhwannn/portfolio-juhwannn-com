@@ -13,13 +13,16 @@ import {
   SiJest,
   SiGit,
   SiGithub,
+  SiExpo,
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 
 export default function SkillsSection() {
   const frontTechStack = [
     { name: 'React', icon: <SiReact color="#61DBFB" /> },
+    { name: 'React Native', icon: <SiReact color="#61DBFB" /> },
     { name: 'Next.js', icon: <SiNextdotjs /> },
+    { name: 'Expo', icon: <SiExpo color="#000000" /> },
     { name: 'JavaScript', icon: <SiJavascript color="#f7df1e" /> },
     { name: 'HTML5', icon: <SiHtml5 color="#e34c26" /> },
     { name: 'CSS3', icon: <SiCss3 color="#264de4" /> },

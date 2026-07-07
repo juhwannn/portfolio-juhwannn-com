@@ -14,6 +14,36 @@ export default function ExperienceSection() {
         <div className={styles.timelineItem}>
           <div className={styles.timelineContent}>
             <div className={styles.timelineHeader}>
+              <h3 className={styles.timelineTitle}>위페어</h3>
+              <p className={styles.timelinePeriod}>2024년 11월 1일 - 2025년 5월</p>
+            </div>
+            <p className={styles.timelinePosition}>개발자</p>
+            <Hr />
+            <p className={styles.timelineSubtitle}>
+              자동차 정비 관련 서비스 웹, 앱, 어드민 개발
+            </p>
+
+            <div className={styles.projectTech}>
+              <span className={styles.techTag}>React</span>
+              <span className={styles.techTag}>React Native</span>
+              <span className={styles.techTag}>Expo</span>
+              <span className={styles.techTag}>Next.js</span>
+              <span className={styles.techTag}>Node.js</span>
+              <span className={styles.techTag}>MongoDB</span>
+              <span className={styles.techTag}>AWS</span>
+            </div>
+
+            <ul className={styles.timelineList}>
+              <li>자동차 정비 관련 애플리케이션 백엔드 개발</li>
+              <li>고객 대면 웹 서비스 및 어드민 사이트 프론트엔드 개발</li>
+              <li>MongoDB 기반 데이터 모델링 및 API 서버 구현</li>
+              <li>React/Next.js를 이용한 반응형 UI 구현</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineContent}>
+            <div className={styles.timelineHeader}>
               <h3 className={styles.timelineTitle}>더 클라우드 팩토리</h3>
               <p className={styles.timelinePeriod}>2023년 02월 - 2025년 2월</p>
             </div>
